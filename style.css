@@ -1,0 +1,402 @@
+body {
+    background-color: #181818;
+    color: #c9d1d9;
+}
+
+nav.navigation .navigation-link,
+nav.navigation {
+    background: #333;
+}
+
+cdbl-sidebar,
+cdbl-project-browse-sidebar .menu-list .menu-item,
+cdbl-project-browse-sidebar .menu-list .menu-item:visited,
+cdbl-project-browse-sidebar,
+cdbl-project-browse-list {
+    background-color: #161C22;
+}
+
+cdbl-project-browse-project .project-block {
+    background-color: #363636;
+}
+
+cdbl-project-browse-project .client-block {
+    background-color: #242f29;
+}
+
+cdbl-pagination .pagination .pagination--item.active,
+nav.navigation .navigation-link.active,
+nav.navigation .navigation-link:active,
+nav.navigation .navigation-link:hover {
+    background-color: #755348;
+    color: #c9d1d9;
+}
+
+cdbl-modal .cdbl-modal--style-with-sticky-header-and-footer .modal-header,
+cdbl-modal .cdbl-modal__template-wrapper {
+    background-color: #333;
+}
+
+.activity-normal .activity-content a,
+.comment .message a,
+.modal-user-profile .profile-section a,
+.task-overview-details .project-description a,
+.sidebar-estimation .estimate-calc a,
+.sidebar-narrow .link a,
+.sidebar .link a,
+cdbl-expert-profile-skills-and-expertise .portfolio__tabs-tab,
+cdbl-expert-profile-portfolio cdbl-pagination .pagination a,
+cdbl-expert-profile-reviews cdbl-pagination .pagination a,
+.comments .comment .content .private-label,
+cdbl-activity .activity--create_comment .comment .content .private-label,
+cdbl-project-browse-sidebar .menu-list .menu-item,
+cdbl-project-browse-sidebar .menu-list .menu-item:visited,
+.form-controls .checkbox input[type=checkbox]:checked+span+label,
+.form-controls .checkbox input[type=radio]:checked+span+label,
+a,
+a:hover {
+    color: #67f2a2;
+}
+
+.arrow-left {
+    border-right-color: #67f2a2;
+}
+
+.arrow-down {
+    border-top-color: #67f2a2;
+}
+
+.settings-wrapper .sidebar .link.active a,
+.comment .message a,
+.label-success,
+.success-text {
+    color: #67f2a2 !important;
+}
+
+hr,
+.settings-wrapper .sidebar .link a,
+cdbl-project-browse-project .project__meta-bottom,
+cdbl-expert-profile-skills-and-expertise .divider,
+.activity-client .overview,
+.activity-contractor .overview,
+.activity-expert .overview,
+.task-overview-tab {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.cdbl__checkbox+.check:before,
+.checkbox input[type=checkbox]:checked+span,
+.icon-checkbox-checked,
+.checkbox input[type=radio]:checked+span,
+.icon-radiobox-selected,
+.icon-private-message,
+marked-textarea .marked-textarea--controls .btn-icon img,
+.icon.icon-checkmark-circle,
+.icon.icon-price-symbol,
+.icon.icon-clock {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.cdbl__tag--info,
+cdbl-expert-profile-portfolio cdbl-pagination .pagination .pagination--item.active,
+cdbl-expert-profile-reviews cdbl-pagination .pagination .pagination--item.active {
+    background-color: #555;
+}
+
+.form-controls .checkbox label,
+.form-group-inline .form-controls .form-label:not(.custom),
+cdbl-pagination .pagination a,
+cdbl-project-browse-project .client-block:hover,
+cdbl-project-browse-project .project-block,
+cdbl-pagination .pagination .pagination--item.active a,
+.normal-text,
+.user-link span,
+cdbl-expert-profile-about .about__text,
+cdbl-modal .cdbl-modal__template-wrapper,
+cdbl-expert-profile-skills-and-expertise .portfolio__tabs-tab.active,
+cdbl-expert-profile-reviews .review__rating-value,
+cdbl-expert-profile-reviews .review__metrics-value,
+cdbl-expert-profile-portfolio .portfolio__title,
+cdbl-expert-profile-portfolio .portfolio__title a,
+cdbl-expert-profile-skills-and-expertise .skills__heading,
+cdbl-expert-profile-portfolio .portfolio__description,
+cdbl-expert-profile-skills-and-expertise .info__item-heading,
+cdbl-expert-profile-skills-and-expertise .info__item-body,
+cdbl-expert-profile-skills-and-expertise .metrics__metric-value,
+cdbl-switch .cdbl-label,
+cdbl-expert-profile-skills-and-expertise .metrics__metric-label,
+.activity-client .overview .title,
+.activity-client .overview .title .user-link,
+.activity-contractor .overview .title,
+.activity-contractor .overview .title .user-link,
+.activity-expert .overview .title,
+.activity-expert .overview .title .user-link {
+    color: #c9d1d9;
+}
+
+cdbl-project-browse-project .project-block:active,
+cdbl-project-browse-project .project-block:focus,
+cdbl-project-browse-project .project-block:hover,
+cdbl-project-browse-project .project-block:visited {
+    color: #c9d1d9;
+}
+
+.settings-wrapper .sidebar .link a,
+cdbl-project-browse-project .client-block,
+.sidebar-estimation .estimate-description,
+.blackBlue-text,
+.bluishGray-text,
+.cloudyBlue-text,
+.create-new .project-type-box,
+.darkGrey-text,
+.modal-new-sub-task .price-calculated .form-label span,
+.sidebar-narrow .label-text,
+.sidebar .label-text {
+    color: #c9d1d9 !important;
+}
+
+.cdbl__tag,
+.cdbl-button.button-icon,
+cdbl-expert-profile-skills-and-expertise .card__title--xxl,
+cdbl-expert-profile-skills-and-expertise .card__title--lg,
+cdbl-expert-profile-skills-and-expertise .card__description,
+.activity-client .details,
+.activity-client .overview .role.text-budget,
+.activity-client .overview .role.text-budget .activity-contractor .details,
+.activity-client .overview .text,
+.activity-client .overview .text-budget,
+.activity-client .overview .text.role,
+.activity-contractor .overview .role.text-budget,
+.activity-contractor .overview .text,
+.activity-contractor .overview .text-budget,
+.activity-contractor .overview .text.role,
+.activity-expert .details,
+.activity-expert .overview .role.text-budget,
+.activity-expert .overview .text,
+.activity-expert .overview .text-budget,
+.activity-expert .overview .text.role,
+.activity-normal {
+    color: #c9d1d9;
+}
+
+.cdbl-button.button-icon {
+    transition: 300ms;
+}
+
+.cdbl__tag.cdbl__tag--active,
+.cdbl__tag:hover,
+.cdbl__tag:visited {
+    background-color: #3f4643;
+    color: #c9d1d9;
+}
+
+.cdbl__tabs .cdbl__tabs-header .cdbl__tabs-title.active {
+    background-color: #000 !important;
+}
+
+.cdbl__input,
+.cdbl__select,
+.cdbl__textarea,
+.form-control input:not([type=submit]),
+.form-control input[type=date],
+.form-control input[type=datetime],
+.form-control input[type=email],
+.form-control input[type=number],
+.form-control input[type=password],
+.form-control input[type=text],
+.form-control select,
+.form-control textarea,
+form input:not([type=submit]),
+form input[type=date],
+form input[type=datetime],
+form input[type=email],
+form input[type=number],
+form input[type=password],
+form input[type=text],
+form select,
+form textarea,
+input:not([type=submit]),
+input[type=date],
+input[type=datetime],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=text],
+select,
+textarea,
+.cdbl__tag,
+.cdbl__tabs,
+.divider,
+.divider-bottom,
+.divider-top,
+.cdbl__tabs .cdbl__tabs-header .cdbl__tabs-title {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-primary,
+.cdbl-button,
+.cdbl-button.primary,
+[cdbl-button],
+[cdbl-button].primary,
+cdbl-button,
+cdbl-button.primary {
+    background-color: #238636;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled,
+.btn-primary[disabled],
+.cdbl-button.disabled,
+.cdbl-button.primary.disabled,
+.cdbl-button.primary:disabled,
+.cdbl-button.primary[disabled],
+.cdbl-button:disabled,
+.cdbl-button[disabled],
+[cdbl-button].disabled,
+[cdbl-button].primary.disabled,
+[cdbl-button].primary:disabled,
+[cdbl-button].primary[disabled],
+[cdbl-button]:disabled,
+[cdbl-button][disabled],
+cdbl-button.disabled,
+cdbl-button.primary.disabled,
+cdbl-button.primary:disabled,
+cdbl-button.primary[disabled],
+cdbl-button:disabled,
+cdbl-button[disabled] {
+    background-color: #1d2122;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+cdbl-switch .cdbl-bar {
+    background-color: #4d4d4d;
+}
+
+.sidebar-narrow .sidebar-table tr td,
+.sidebar .sidebar-table tr td {
+    background-color: #363636;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+#commentsForm .actions input[type=submit],
+.sidebar-narrow .sidebar-table tr td:last-child,
+.sidebar .sidebar-table tr td:last-child,
+.sidebar-narrow .sidebar-table tr td:first-child,
+.sidebar .sidebar-table tr td:first-child {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.comments .comment.different-user,
+cdbl-activity .activity--create_comment .comment.different-user {
+    background-color: #363636;
+    border-color: #48a971
+}
+
+.comments .comment,
+cdbl-activity .activity--create_comment .comment {
+    background-color: #363636;
+    border-color: #c88b78
+}
+
+.comments .comment .content .name,
+.comments .comment .content .name a.user-link,
+cdbl-activity .activity--create_comment .comment .content .name,
+cdbl-activity .activity--create_comment .comment .content .name a.user-link,
+.activity-normal .activity-meta,
+.activity-normal .time,
+.activity-normal .time-attachment,
+.comments .comment .content .time,
+cdbl-activity .activity--create_comment .comment .content .time,
+cdbl-activity .activity--create_comment .comment .content .message {
+    color: #c9d1d9;
+}
+
+.sidebar-estimation .estimate-header.sidebar-row {
+    background-color: #252525;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.estimation-sidebar__additinal-fields {
+    background-color: rgb(54 54 54);
+}
+
+.sidebar-narrow .sidebar-row,
+.sidebar .sidebar-row {
+    border-color: rgba(255, 255, 255, 0.1);
+    background-color: #363636;
+}
+
+.cdbl-button.button-outline,
+.cdbl-button.outline,
+.cdbl-button.primary.outline,
+[cdbl-button].button-outline,
+[cdbl-button].outline,
+[cdbl-button].primary.outline,
+cdbl-button.button-outline,
+cdbl-button.outline,
+cdbl-button.primary.outline {
+    background-color: #252525;
+    color: #c9d1d9;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+#commentsForm .actions input[type=submit],
+.cdbl-button.button-outline:hover,
+.cdbl-button.outline:hover,
+.cdbl-button.primary.outline:hover,
+[cdbl-button].button-outline:hover,
+[cdbl-button].outline:hover,
+[cdbl-button].primary.outline:hover,
+cdbl-button.button-outline:hover,
+cdbl-button.outline:hover,
+cdbl-button.primary.outline:hover {
+    background-color: #238636;
+}
+
+.activity-normal {
+    background-color: #534343;
+}
+
+cdbl-expert-profile-skills-and-expertise .info {
+    background-color: #4d4d4d;
+}
+
+
+cdbl-activity-stream .sticky-bottom {
+    background-color: #333;
+}
+
+.comments .comment.comment-private,
+cdbl-activity .activity--create_comment .comment.comment-private,
+#commentsForm .tabs .tab.expert.active,
+#commentsForm .expert-only .btn-group,
+#commentsForm .expert-only .comment-area,
+#commentsForm .tabs .tab.expert,
+#commentsForm .expert-only .btn {
+    background-color: #43635a;
+
+}
+
+#commentsForm .tabs .tab.expert,
+#commentsForm .tabs .tab.expert.active {
+    color: #67f2a2;
+}
+
+#commentsForm marked-textarea textarea,
+#commentsForm .expert-only .comment-area {
+    color: #c9d1d9;
+}
+
+#commentsForm marked-textarea textarea,
+#commentsForm marked-textarea .marked-textarea--controls,
+marked-textarea .marked-textarea--controls .btn-icon,
+#commentsForm .tabs .tab.public.active,
+#commentsForm .tabs .public {
+    background-color: #5f5f5f;
+}
+
+cdbl-comments-form-referred-partner-notice .notice-overlay {
+    background-color: rgba(0, 0, 0, 0.85);
+}
