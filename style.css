@@ -1,402 +1,701 @@
-body {
-    background-color: #181818;
-    color: #c9d1d9;
-}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #181818;
+        color: #c9d1d9;
+    }
 
-nav.navigation .navigation-link,
-nav.navigation {
-    background: #333;
-}
+    nav.navigation .navigation-link,
+    nav.navigation {
+        background: #333;
+    }
 
-cdbl-sidebar,
-cdbl-project-browse-sidebar .menu-list .menu-item,
-cdbl-project-browse-sidebar .menu-list .menu-item:visited,
-cdbl-project-browse-sidebar,
-cdbl-project-browse-list {
-    background-color: #161C22;
-}
+    a.project-block:focus {
+        box-shadow: none !important;
+        border: none;
+    }
 
-cdbl-project-browse-project .project-block {
-    background-color: #363636;
-}
+    cdbl-client-profile-view-modal .section-meta,
+    cdbl-notifications-list,
+    cdbl-notifications-widget-popover .notifications-header.notifications-header--important,
+    cdbl-sidebar,
+    cdbl-project-browse-sidebar .menu-list .menu-item,
+    cdbl-project-browse-sidebar .menu-list .menu-item:visited,
+    cdbl-project-browse-sidebar,
+    cdbl-notifications .notifications-menu .menu-list .menu-item,
+    cdbl-notifications .notifications-menu .menu-list .menu-item:visited {
+        background-color: #161C22;
+    }
 
-cdbl-project-browse-project .client-block {
-    background-color: #242f29;
-}
+    cdbl-notification-item .notification-wrapper.notification--isImportant.notification--isResolved {
+        background-color: #161C22 !important;
+    }
 
-cdbl-pagination .pagination .pagination--item.active,
-nav.navigation .navigation-link.active,
-nav.navigation .navigation-link:active,
-nav.navigation .navigation-link:hover {
-    background-color: #755348;
-    color: #c9d1d9;
-}
+    .popover,
+    cdbl-project-dashboard-project .project-template:active,
+    cdbl-project-dashboard-project .project-template:focus,
+    cdbl-project-dashboard-project .project-template:hover,
+    cdbl-project-dashboard-project .project-template:visited,
+    .review-wrapper cdbl-expert-profile-edit-review-item,
+    cdbl-modal .cdbl-modal--style-with-sticky-header-and-footer .modal-actions,
+    cdbl-notification-item .notification-wrapper.notification--isRead,
+    cdbl-notifications .notifications-menu .menu-list .menu-item.active,
+    cdbl-notifications .notifications-menu .menu-list .menu-item:hover,
+    cdbl-notifications-widget-popover .notifications-list__see-more.notifications-list__see-more--sticky,
+    cdbl-project-browse-project .project-block,
+    cdbl-expert-profile-edit-portfolio-item,
+    cdbl-project-user-card .project-user-card__inner-wrapper {
+        background-color: #363636;
+    }
 
-cdbl-modal .cdbl-modal--style-with-sticky-header-and-footer .modal-header,
-cdbl-modal .cdbl-modal__template-wrapper {
-    background-color: #333;
-}
+    cdbl-no-results,
+    cdbl-project-browse-project .client-block {
+        background-color: #242f29;
+    }
 
-.activity-normal .activity-content a,
-.comment .message a,
-.modal-user-profile .profile-section a,
-.task-overview-details .project-description a,
-.sidebar-estimation .estimate-calc a,
-.sidebar-narrow .link a,
-.sidebar .link a,
-cdbl-expert-profile-skills-and-expertise .portfolio__tabs-tab,
-cdbl-expert-profile-portfolio cdbl-pagination .pagination a,
-cdbl-expert-profile-reviews cdbl-pagination .pagination a,
-.comments .comment .content .private-label,
-cdbl-activity .activity--create_comment .comment .content .private-label,
-cdbl-project-browse-sidebar .menu-list .menu-item,
-cdbl-project-browse-sidebar .menu-list .menu-item:visited,
-.form-controls .checkbox input[type=checkbox]:checked+span+label,
-.form-controls .checkbox input[type=radio]:checked+span+label,
-a,
-a:hover {
-    color: #67f2a2;
-}
+    cdbl-project-browse-list,
+    .reviews-list cdbl-expert-profile-edit-review-item {
+        background-color: #181818;
+    }
 
-.arrow-left {
-    border-right-color: #67f2a2;
-}
+    .popover,
+    .popover.bottom>.arrow:after {
+        border-bottom-color: #363636;
+    }
 
-.arrow-down {
-    border-top-color: #67f2a2;
-}
-
-.settings-wrapper .sidebar .link.active a,
-.comment .message a,
-.label-success,
-.success-text {
-    color: #67f2a2 !important;
-}
-
-hr,
-.settings-wrapper .sidebar .link a,
-cdbl-project-browse-project .project__meta-bottom,
-cdbl-expert-profile-skills-and-expertise .divider,
-.activity-client .overview,
-.activity-contractor .overview,
-.activity-expert .overview,
-.task-overview-tab {
-    border-color: rgba(255, 255, 255, 0.1);
-}
-
-.cdbl__checkbox+.check:before,
-.checkbox input[type=checkbox]:checked+span,
-.icon-checkbox-checked,
-.checkbox input[type=radio]:checked+span,
-.icon-radiobox-selected,
-.icon-private-message,
-marked-textarea .marked-textarea--controls .btn-icon img,
-.icon.icon-checkmark-circle,
-.icon.icon-price-symbol,
-.icon.icon-clock {
-    -webkit-filter: invert(1);
-    filter: invert(1);
-}
-
-.cdbl__tag--info,
-cdbl-expert-profile-portfolio cdbl-pagination .pagination .pagination--item.active,
-cdbl-expert-profile-reviews cdbl-pagination .pagination .pagination--item.active {
-    background-color: #555;
-}
-
-.form-controls .checkbox label,
-.form-group-inline .form-controls .form-label:not(.custom),
-cdbl-pagination .pagination a,
-cdbl-project-browse-project .client-block:hover,
-cdbl-project-browse-project .project-block,
-cdbl-pagination .pagination .pagination--item.active a,
-.normal-text,
-.user-link span,
-cdbl-expert-profile-about .about__text,
-cdbl-modal .cdbl-modal__template-wrapper,
-cdbl-expert-profile-skills-and-expertise .portfolio__tabs-tab.active,
-cdbl-expert-profile-reviews .review__rating-value,
-cdbl-expert-profile-reviews .review__metrics-value,
-cdbl-expert-profile-portfolio .portfolio__title,
-cdbl-expert-profile-portfolio .portfolio__title a,
-cdbl-expert-profile-skills-and-expertise .skills__heading,
-cdbl-expert-profile-portfolio .portfolio__description,
-cdbl-expert-profile-skills-and-expertise .info__item-heading,
-cdbl-expert-profile-skills-and-expertise .info__item-body,
-cdbl-expert-profile-skills-and-expertise .metrics__metric-value,
-cdbl-switch .cdbl-label,
-cdbl-expert-profile-skills-and-expertise .metrics__metric-label,
-.activity-client .overview .title,
-.activity-client .overview .title .user-link,
-.activity-contractor .overview .title,
-.activity-contractor .overview .title .user-link,
-.activity-expert .overview .title,
-.activity-expert .overview .title .user-link {
-    color: #c9d1d9;
-}
-
-cdbl-project-browse-project .project-block:active,
-cdbl-project-browse-project .project-block:focus,
-cdbl-project-browse-project .project-block:hover,
-cdbl-project-browse-project .project-block:visited {
-    color: #c9d1d9;
-}
-
-.settings-wrapper .sidebar .link a,
-cdbl-project-browse-project .client-block,
-.sidebar-estimation .estimate-description,
-.blackBlue-text,
-.bluishGray-text,
-.cloudyBlue-text,
-.create-new .project-type-box,
-.darkGrey-text,
-.modal-new-sub-task .price-calculated .form-label span,
-.sidebar-narrow .label-text,
-.sidebar .label-text {
-    color: #c9d1d9 !important;
-}
-
-.cdbl__tag,
-.cdbl-button.button-icon,
-cdbl-expert-profile-skills-and-expertise .card__title--xxl,
-cdbl-expert-profile-skills-and-expertise .card__title--lg,
-cdbl-expert-profile-skills-and-expertise .card__description,
-.activity-client .details,
-.activity-client .overview .role.text-budget,
-.activity-client .overview .role.text-budget .activity-contractor .details,
-.activity-client .overview .text,
-.activity-client .overview .text-budget,
-.activity-client .overview .text.role,
-.activity-contractor .overview .role.text-budget,
-.activity-contractor .overview .text,
-.activity-contractor .overview .text-budget,
-.activity-contractor .overview .text.role,
-.activity-expert .details,
-.activity-expert .overview .role.text-budget,
-.activity-expert .overview .text,
-.activity-expert .overview .text-budget,
-.activity-expert .overview .text.role,
-.activity-normal {
-    color: #c9d1d9;
-}
-
-.cdbl-button.button-icon {
-    transition: 300ms;
-}
-
-.cdbl__tag.cdbl__tag--active,
-.cdbl__tag:hover,
-.cdbl__tag:visited {
-    background-color: #3f4643;
-    color: #c9d1d9;
-}
-
-.cdbl__tabs .cdbl__tabs-header .cdbl__tabs-title.active {
-    background-color: #000 !important;
-}
-
-.cdbl__input,
-.cdbl__select,
-.cdbl__textarea,
-.form-control input:not([type=submit]),
-.form-control input[type=date],
-.form-control input[type=datetime],
-.form-control input[type=email],
-.form-control input[type=number],
-.form-control input[type=password],
-.form-control input[type=text],
-.form-control select,
-.form-control textarea,
-form input:not([type=submit]),
-form input[type=date],
-form input[type=datetime],
-form input[type=email],
-form input[type=number],
-form input[type=password],
-form input[type=text],
-form select,
-form textarea,
-input:not([type=submit]),
-input[type=date],
-input[type=datetime],
-input[type=email],
-input[type=number],
-input[type=password],
-input[type=text],
-select,
-textarea,
-.cdbl__tag,
-.cdbl__tabs,
-.divider,
-.divider-bottom,
-.divider-top,
-.cdbl__tabs .cdbl__tabs-header .cdbl__tabs-title {
-    border-color: rgba(255, 255, 255, 0.1);
-}
-
-.btn-primary,
-.cdbl-button,
-.cdbl-button.primary,
-[cdbl-button],
-[cdbl-button].primary,
-cdbl-button,
-cdbl-button.primary {
-    background-color: #238636;
-}
-
-.btn-primary.disabled,
-.btn-primary:disabled,
-.btn-primary[disabled],
-.cdbl-button.disabled,
-.cdbl-button.primary.disabled,
-.cdbl-button.primary:disabled,
-.cdbl-button.primary[disabled],
-.cdbl-button:disabled,
-.cdbl-button[disabled],
-[cdbl-button].disabled,
-[cdbl-button].primary.disabled,
-[cdbl-button].primary:disabled,
-[cdbl-button].primary[disabled],
-[cdbl-button]:disabled,
-[cdbl-button][disabled],
-cdbl-button.disabled,
-cdbl-button.primary.disabled,
-cdbl-button.primary:disabled,
-cdbl-button.primary[disabled],
-cdbl-button:disabled,
-cdbl-button[disabled] {
-    background-color: #1d2122;
-    border-color: rgba(255, 255, 255, 0.1);
-}
-
-cdbl-switch .cdbl-bar {
-    background-color: #4d4d4d;
-}
-
-.sidebar-narrow .sidebar-table tr td,
-.sidebar .sidebar-table tr td {
-    background-color: #363636;
-    border-color: rgba(255, 255, 255, 0.1);
-}
-
-#commentsForm .actions input[type=submit],
-.sidebar-narrow .sidebar-table tr td:last-child,
-.sidebar .sidebar-table tr td:last-child,
-.sidebar-narrow .sidebar-table tr td:first-child,
-.sidebar .sidebar-table tr td:first-child {
-    border-color: rgba(255, 255, 255, 0.1);
-}
+    .activity-wrapper,
+    cdbl-pagination .pagination .pagination--item.active,
+    nav.navigation .navigation-link.active,
+    nav.navigation .navigation-link:active,
+    nav.navigation .navigation-link:hover {
+        background-color: #755348;
+        color: #c9d1d9;
+    }
 
 
-.comments .comment.different-user,
-cdbl-activity .activity--create_comment .comment.different-user {
-    background-color: #363636;
-    border-color: #48a971
-}
+    cdbl-project-dashboard-stats .stats-wrapper,
+    cdbl-project-dashboard-navigation .cdbl__navigation-link a.active,
+    cdbl-project-dashboard-navigation .cdbl__navigation-link a:hover,
+    cdbl-modal .cdbl-modal--style-with-sticky-header-and-footer .modal-header,
+    cdbl-modal .cdbl-modal__template-wrapper,
+    cdbl-tag {
+        background-color: #333;
+    }
 
-.comments .comment,
-cdbl-activity .activity--create_comment .comment {
-    background-color: #363636;
-    border-color: #c88b78
-}
+    cdbl-checkbox .check:before,
+    cdbl-expert-profile-edit .expert-profile-edit__user .expert-profile-edit__user__visibility>.button-link,
+    .btn-primary.button-link,
+    .cdbl-button.button-link,
+    .cdbl-button.primary.button-link,
+    [cdbl-button].button-link,
+    [cdbl-button].primary.button-link,
+    cdbl-button.button-link,
+    cdbl-button.primary.button-link .activity-normal .activity-content a,
+    .comment .message a,
+    .modal-user-profile .profile-section a,
+    .task-overview-details .project-description a,
+    .sidebar-estimation .estimate-calc a,
+    .sidebar-narrow .link a,
+    .sidebar .link a,
+    cdbl-expert-profile-skills-and-expertise .portfolio__tabs-tab,
+    cdbl-expert-profile-portfolio cdbl-pagination .pagination a,
+    cdbl-expert-profile-reviews cdbl-pagination .pagination a,
+    .comments .comment .content .private-label,
+    cdbl-activity .activity--create_comment .comment .content .private-label,
+    cdbl-project-browse-sidebar .menu-list .menu-item,
+    cdbl-project-browse-sidebar .menu-list .menu-item:visited,
+    .form-controls .checkbox input[type=checkbox]:checked+span+label,
+    .form-controls .checkbox input[type=radio]:checked+span+label,
+    .popover-content.main-menu ul.nav li a,
+    .popover-content.main-menu ul.nav li a:hover,
+    cdbl-expert-profile-edit .expert-profile-edit-menu .menu-item,
+    cdbl-expert-profile-edit .expert-profile-edit-menu .menu-item:hover,
+    cdbl-notifications .notifications-menu .menu-list .menu-item,
+    cdbl-notifications .notifications-menu .menu-list .menu-item:visited,
+    .activity-normal .activity-content a,
+    .comment .message a,
+    .task-overview-details .project-description a,
+    .cdbl-button.button-link,
+    .cdbl-button.button-primary.button-link,
+    [cdbl-button].button-link,
+    a.cdbl-button.button-link,
+    cdbl-button.button-link,
+    a,
+    a:hover {
+        color: #67f2a2;
+    }
 
-.comments .comment .content .name,
-.comments .comment .content .name a.user-link,
-cdbl-activity .activity--create_comment .comment .content .name,
-cdbl-activity .activity--create_comment .comment .content .name a.user-link,
-.activity-normal .activity-meta,
-.activity-normal .time,
-.activity-normal .time-attachment,
-.comments .comment .content .time,
-cdbl-activity .activity--create_comment .comment .content .time,
-cdbl-activity .activity--create_comment .comment .content .message {
-    color: #c9d1d9;
-}
+    .arrow-left {
+        border-right-color: #67f2a2;
+    }
 
-.sidebar-estimation .estimate-header.sidebar-row {
-    background-color: #252525;
-    border-color: rgba(255, 255, 255, 0.1);
-}
+    .arrow-down {
+        border-top-color: #67f2a2;
+    }
 
-.estimation-sidebar__additinal-fields {
-    background-color: rgb(54 54 54);
-}
+    cdbl-project-dashboard-navigation .cdbl__navigation-link a,
+    .settings-wrapper .sidebar .link.active a,
+    .comment .message a,
+    .label-success,
+    .success-text {
+        color: #67f2a2 !important;
+    }
 
-.sidebar-narrow .sidebar-row,
-.sidebar .sidebar-row {
-    border-color: rgba(255, 255, 255, 0.1);
-    background-color: #363636;
-}
+    cdbl-project-dashboard-stats .stats-wrapper,
+    cdbl-project-dashboard-stats .stat,
+    cdbl-project-dashboard-navigation .cdbl__navigation-link a,
+    hr,
+    .settings-wrapper .sidebar .link a,
+    cdbl-project-browse-project .project__meta-bottom,
+    cdbl-expert-profile-skills-and-expertise .divider,
+    .activity-client .overview,
+    .activity-contractor .overview,
+    .activity-expert .overview,
+    cdbl-notification-date-separator .date-wrapper,
+    .popover-content.main-menu ul.nav li:last-child,
+    cdbl-expert-profile-edit .expert-profile-edit__toolbar__bottom,
+    .task-overview-tab,
+    cdbl-field-container .field__form-element textarea,
+    form cdbl-field-container .field__form-element textarea,
+    cdbl-field-container .field__form-element select,
+    form cdbl-field-container .field__form-element select,
+    cdbl-tag,
+    cdbl-expert-profile-edit-portfolio-item,
+    cdbl-modal .cdbl-modal--style-with-dividers .modal-header,
+    cdbl-expert-profile-edit-portfolio-item .portfolio-actions,
+    cdbl-expert-profile-edit .reviews-list cdbl-expert-profile-edit-review-item:not(:first-child),
+    cdbl-modal .cdbl-modal--style-with-actions-dividers .modal-actions,
+    cdbl-modal .cdbl-modal--style-with-dividers .modal-actions,
+    cdbl-expert-profile-reviews-edit-modal .section-selected-reviews-list .selected-review,
+    cdbl-expert-profile-reviews-edit-modal .section-selected-reviews-list .selected-review-placeholder,
+    cdbl-expert-profile-reviews-edit-modal .section-reviews-list .review-wrapper,
+    cdbl-project-dashboard-project+cdbl-project-dashboard-project,
+    cdbl-project-dashboard-navigation .cdbl__navigation-link .submenu,
+    cdbl-project-scope-doc-view .scope-doc-item,
+    .price-breakdown .price-breakdown__amount {
+        border-color: rgba(255, 255, 255, 0.1);
+    }
 
-.cdbl-button.button-outline,
-.cdbl-button.outline,
-.cdbl-button.primary.outline,
-[cdbl-button].button-outline,
-[cdbl-button].outline,
-[cdbl-button].primary.outline,
-cdbl-button.button-outline,
-cdbl-button.outline,
-cdbl-button.primary.outline {
-    background-color: #252525;
-    color: #c9d1d9;
-    border-color: rgba(255, 255, 255, 0.1);
-}
+    cdbl-field-container .field__form-element input:not([type=submit]):hover,
+    cdbl-field-container .field__form-element input[type=date]:hover,
+    cdbl-field-container .field__form-element input[type=datetime]:hover,
+    cdbl-field-container .field__form-element input[type=email]:hover,
+    cdbl-field-container .field__form-element input[type=number]:hover,
+    cdbl-field-container .field__form-element input[type=password]:hover,
+    cdbl-field-container .field__form-element input[type=text]:hover,
+    form cdbl-field-container .field__form-element input:not([type=submit]):hover,
+    form cdbl-field-container .field__form-element input[type=date]:hover,
+    form cdbl-field-container .field__form-element input[type=datetime]:hover,
+    form cdbl-field-container .field__form-element input[type=email]:hover,
+    form cdbl-field-container .field__form-element input[type=number]:hover,
+    form cdbl-field-container .field__form-element input[type=password]:hover,
+    form cdbl-field-container .field__form-element input[type=text]:hover,
+    cdbl-field-container .field__form-element input:not([type=submit]):focus,
+    cdbl-field-container .field__form-element input[type=date]:focus,
+    cdbl-field-container .field__form-element input[type=datetime]:focus,
+    cdbl-field-container .field__form-element input[type=email]:focus,
+    cdbl-field-container .field__form-element input[type=number]:focus,
+    cdbl-field-container .field__form-element input[type=password]:focus,
+    cdbl-field-container .field__form-element input[type=text]:focus,
+    form cdbl-field-container .field__form-element input:not([type=submit]):focus,
+    form cdbl-field-container .field__form-element input[type=date]:focus,
+    form cdbl-field-container .field__form-element input[type=datetime]:focus,
+    form cdbl-field-container .field__form-element input[type=email]:focus,
+    form cdbl-field-container .field__form-element input[type=number]:focus,
+    form cdbl-field-container .field__form-element input[type=password]:focus,
+    form cdbl-field-container .field__form-element input[type=text]:focus,
+    cdbl-field-container .field__form-element textarea:hover,
+    form cdbl-field-container .field__form-element textarea:hover,
+    cdbl-field-container .field__form-element select:hover,
+    form cdbl-field-container .field__form-element select:hover,
+    cdbl-field-container .field__form-element textarea:focus,
+    form cdbl-field-container .field__form-element textarea:focus,
+    cdbl-field-container .field__form-element select:focus,
+    form cdbl-field-container .field__form-element select:focus {
+        border-color: rgba(255, 255, 255, 0.3);
+        box-shadow: none;
+    }
 
-#commentsForm .actions input[type=submit],
-.cdbl-button.button-outline:hover,
-.cdbl-button.outline:hover,
-.cdbl-button.primary.outline:hover,
-[cdbl-button].button-outline:hover,
-[cdbl-button].outline:hover,
-[cdbl-button].primary.outline:hover,
-cdbl-button.button-outline:hover,
-cdbl-button.outline:hover,
-cdbl-button.primary.outline:hover {
-    background-color: #238636;
-}
+    cdbl-project-user-card .project-user-card__inner-wrapper {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
 
-.activity-normal {
-    background-color: #534343;
-}
+    .cdbl__select-wrapper:after {
+        border-color: rgba(255, 255, 255, 0.3);
+    }
 
-cdbl-expert-profile-skills-and-expertise .info {
-    background-color: #4d4d4d;
-}
+    .cdbl__checkbox+.check:before,
+    .checkbox input[type=checkbox]:checked+span,
+    .icon-checkbox-checked,
+    .checkbox input[type=radio]:checked+span,
+    .icon-radiobox-selected,
+    .icon-private-message,
+    marked-textarea .marked-textarea--controls .btn-icon img,
+    .icon.icon-checkmark-circle,
+    .icon.icon-price-symbol,
+    .icon.icon-settings,
+    .icon.icon-link-external,
+    .icon-message-gray,
+    .icon.icon-arrow-up,
+    .icon.icon-clock {
+        -webkit-filter: invert(1);
+        filter: invert(1);
+    }
+
+    .cdbl__tag--info,
+    cdbl-expert-profile-portfolio cdbl-pagination .pagination .pagination--item.active,
+    cdbl-expert-profile-reviews cdbl-pagination .pagination .pagination--item.active {
+        background-color: #555;
+    }
+
+    .btn-primary.button-link.button-link--with-icon-right .icon,
+    .cdbl-button.button-link.button-link--with-icon-right .icon,
+    .cdbl-button.primary.button-link.button-link--with-icon-right .icon,
+    [cdbl-button].button-link.button-link--with-icon-right .icon,
+    [cdbl-button].primary.button-link.button-link--with-icon-right .icon,
+    cdbl-button.button-link.button-link--with-icon-right .icon,
+    cdbl-button.primary.button-link.button-link--with-icon-right .icon,
+    .cdbl__badge.cdbl__badge--important,
+    .cdbl__badge.cdbl__badge--peach,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .form-controls .checkbox label,
+    .form-group-inline .form-controls .form-label:not(.custom),
+    cdbl-pagination .pagination a,
+    cdbl-project-browse-project .client-block:hover,
+    cdbl-project-browse-project .project-block,
+    cdbl-pagination .pagination .pagination--item.active a,
+    .normal-text,
+    .user-link span,
+    cdbl-expert-profile-about .about__text,
+    cdbl-modal .cdbl-modal__template-wrapper,
+    cdbl-expert-profile-skills-and-expertise .portfolio__tabs-tab.active,
+    cdbl-expert-profile-reviews .review__rating-value,
+    cdbl-expert-profile-reviews .review__metrics-value,
+    cdbl-expert-profile-portfolio .portfolio__title,
+    cdbl-expert-profile-portfolio .portfolio__title a,
+    cdbl-expert-profile-skills-and-expertise .skills__heading,
+    cdbl-expert-profile-portfolio .portfolio__description,
+    cdbl-expert-profile-skills-and-expertise .info__item-heading,
+    cdbl-expert-profile-skills-and-expertise .info__item-body,
+    cdbl-expert-profile-skills-and-expertise .metrics__metric-value,
+    cdbl-switch .cdbl-label,
+    cdbl-expert-profile-skills-and-expertise .metrics__metric-label,
+    .activity-client .overview .title,
+    .activity-client .overview .title .user-link,
+    .activity-contractor .overview .title,
+    .activity-contractor .overview .title .user-link,
+    .activity-expert .overview .title,
+    .activity-expert .overview .title .user-link,
+    cdbl-field-container .field__form-element textarea,
+    form cdbl-field-container .field__form-element textarea,
+    cdbl-field-container .field__form-element.field__cdbl-autocomplete .dropdown [data-toggle=dropdown]:after,
+    form cdbl-field-container .field__form-element.field__cdbl-autocomplete .dropdown [data-toggle=dropdown]:after,
+    cdbl-tag,
+    cdbl-project-browse-project .project-block:active,
+    cdbl-project-browse-project .project-block:focus,
+    cdbl-project-browse-project .project-block:hover,
+    cdbl-project-browse-project .project-block:visited,
+    cdbl-expert-profile-edit-portfolio-item .portfolio__description,
+    cdbl-expert-profile-edit-portfolio-item .portfolio__title,
+    cdbl-checkbox .checkbox--isChecked .check+.label,
+    cdbl-field-container .field-container-wrapper .field__label,
+    cdbl-modal .cdbl-modal__template-wrapper .modal-header .title,
+    cdbl-file-selector .upload-drop-area,
+    cdbl-field-container .field-container-wrapper .field__description,
+    cdbl-collapsible .collapsible-block__header__title,
+
+    cdbl-field-container .field__form-element input:not([type=submit]),
+    cdbl-field-container .field__form-element input[type=date],
+    cdbl-field-container .field__form-element input[type=datetime],
+    cdbl-field-container .field__form-element input[type=email],
+    cdbl-field-container .field__form-element input[type=number],
+    cdbl-field-container .field__form-element input[type=password],
+    cdbl-field-container .field__form-element input[type=text],
+    form cdbl-field-container .field__form-element input:not([type=submit]),
+    form cdbl-field-container .field__form-element input[type=date],
+    form cdbl-field-container .field__form-element input[type=datetime],
+    form cdbl-field-container .field__form-element input[type=email],
+    form cdbl-field-container .field__form-element input[type=number],
+    form cdbl-field-container .field__form-element input[type=password],
+    form cdbl-field-container .field__form-element input[type=text],
+    cdbl-field-container .field__form-element select,
+    form cdbl-field-container .field__form-element select,
+    cdbl-expert-profile-edit-review-item .review__author__name,
+    cdbl-expert-profile-edit-review-item .review__comment,
+    cdbl-expert-profile-edit-review-item .review__project-title,
+    cdbl-expert-profile-edit-review-item .review__rating__value,
+    .transactions-main .transaction-date,
+    .transactions-main .transaction .transaction-fee,
+    cdbl-client-profile-view-modal .section-meta .user-meta .user-meta__label,
+    cdbl-client-profile-view-modal .section-header .user-info__name,
+    cdbl-client-profile-view-modal .section-header .user-stat .user-stat__info__primary,
+    cdbl-client-profile-view-modal .section-header .user-stat .user-stat__info__secondary,
+    cdbl-project-dashboard-project-last-activity .last-activity__meta,
+    cdbl-project-dashboard-project-last-activity .last-activity__content,
+    cdbl-project-dashboard-project .project__price,
+    cdbl-client-profile-view-modal .section-reviews .user-review .user-review__reviewer__name,
+    cdbl-client-profile-view-modal .section-reviews .user-review .user-review__title,
+    cdbl-client-profile-view-modal .section-reviews .user-review .user-review__rating__value,
+    .sidebar-widget .sidebar-widget__title,
+    .sidebar-widget .sidebar-widget__body,
+    cdbl-modal .cdbl-modal__template-wrapper .modal-header .subtitle,
+    cdbl-project-scope-doc-view .scope-doc-item .scope-doc-item__top__title,
+    .price-breakdown .price-breakdown__amount,
+    .price-breakdown .price-breakdown__label,
+    .price-breakdown .price-breakdown__description,
+    .cdbl-button.button-icon,
+    .cdbl-button.button-primary.button-icon,
+    [cdbl-button].button-icon,
+    a.cdbl-button.button-icon,
+    cdbl-button.button-icon,
+    .cdbl__select {
+        color: #c9d1d9;
+    }
+
+    cdbl-field-container .field__form-element textarea,
+    form cdbl-field-container .field__form-element textarea {
+        min-height: 200px
+    }
+
+    .transactions-main .transaction .transaction-price,
+    .cdbl-button.button-outline,
+    .cdbl-button.button-primary.button-outline,
+    .cdbl-button.button-primary.button-secondary,
+    .cdbl-button.button-secondary,
+    [cdbl-button].button-outline,
+    [cdbl-button].button-secondary,
+    a.cdbl-button.button-outline,
+    a.cdbl-button.button-secondary,
+    cdbl-button.button-outline,
+    cdbl-button.button-secondary,
+    cdbl-notification-item .notification-wrapper,
+    .settings-wrapper .sidebar .link a,
+    cdbl-project-browse-project .client-block,
+    .sidebar-estimation .estimate-description,
+    .blackBlue-text,
+    .bluishGray-text,
+    .cloudyBlue-text,
+    .create-new .project-type-box,
+    .darkGrey-text,
+    .modal-new-sub-task .price-calculated .form-label span,
+    .sidebar-narrow .label-text,
+    .sidebar .label-text,
+    cdbl-project-dashboard-project .project-template {
+        color: #c9d1d9 !important;
+    }
+
+    cdbl-expert-profile-edit .expert-profile-edit__toolbar__top .expert-profile-edit__toolbar__top__notice,
+    .cdbl__tag,
+    .cdbl-button.button-icon,
+    cdbl-expert-profile-skills-and-expertise .card__title--xxl,
+    cdbl-expert-profile-skills-and-expertise .card__title--lg,
+    cdbl-expert-profile-skills-and-expertise .card__description,
+    .activity-client .details,
+    .activity-client .overview .role.text-budget,
+    .activity-client .overview .role.text-budget .activity-contractor .details,
+    .activity-client .overview .text,
+    .activity-client .overview .text-budget,
+    .activity-client .overview .text.role,
+    .activity-contractor .overview .role.text-budget,
+    .activity-contractor .overview .text,
+    .activity-contractor .overview .text-budget,
+    .activity-contractor .overview .text.role,
+    .activity-expert .details,
+    .activity-expert .overview .role.text-budget,
+    .activity-expert .overview .text,
+    .activity-expert .overview .text-budget,
+    .activity-expert .overview .text.role,
+    .activity-normal,
+    .activity-complete .time,
+    .dropdown-menu>li>a {
+        color: #c9d1d9;
+    }
+
+    .cdbl-button.button-icon {
+        transition: 300ms;
+    }
+
+    .cdbl__tag.cdbl__tag--active,
+    .cdbl__tag:hover,
+    .cdbl__tag:visited {
+        background-color: #3f4643;
+        color: #c9d1d9;
+    }
+
+    cdbl-autocomplete .style-new .dropdown-menu {
+        background-color: #000;
+    }
+
+    cdbl-field-container .field__form-element input:not([type=submit]),
+    cdbl-field-container .field__form-element input[type=date],
+    cdbl-field-container .field__form-element input[type=datetime],
+    cdbl-field-container .field__form-element input[type=email],
+    cdbl-field-container .field__form-element input[type=number],
+    cdbl-field-container .field__form-element input[type=password],
+    cdbl-field-container .field__form-element input[type=text],
+    form cdbl-field-container .field__form-element input:not([type=submit]),
+    form cdbl-field-container .field__form-element input[type=date],
+    form cdbl-field-container .field__form-element input[type=datetime],
+    form cdbl-field-container .field__form-element input[type=email],
+    form cdbl-field-container .field__form-element input[type=number],
+    form cdbl-field-container .field__form-element input[type=password],
+    form cdbl-field-container .field__form-element input[type=text],
+    cdbl-field-container .field__form-element select,
+    form cdbl-field-container .field__form-element select,
+    cdbl-field-container .field__form-element textarea,
+    form cdbl-field-container .field__form-element textarea,
+    .cdbl__tabs .cdbl__tabs-header .cdbl__tabs-title.active {
+        background-color: #000 !important;
+    }
+
+    cdbl-field-container .field__form-element input:not([type=submit]),
+    cdbl-field-container .field__form-element input[type=date],
+    cdbl-field-container .field__form-element input[type=datetime],
+    cdbl-field-container .field__form-element input[type=email],
+    cdbl-field-container .field__form-element input[type=number],
+    cdbl-field-container .field__form-element input[type=password],
+    cdbl-field-container .field__form-element input[type=text],
+    form cdbl-field-container .field__form-element input:not([type=submit]),
+    form cdbl-field-container .field__form-element input[type=date],
+    form cdbl-field-container .field__form-element input[type=datetime],
+    form cdbl-field-container .field__form-element input[type=email],
+    form cdbl-field-container .field__form-element input[type=number],
+    form cdbl-field-container .field__form-element input[type=password],
+    form cdbl-field-container .field__form-element input[type=text],
+    cdbl-expert-profile-edit .expert-profile-edit__toolbar__top,
+    cdbl-notification-item .notification-wrapper,
+    cdbl-notification-item .notification-wrapper.notification--isImportant,
+    .cdbl__input,
+    .cdbl__select,
+    .cdbl__textarea,
+    .form-control input:not([type=submit]),
+    .form-control input[type=date],
+    .form-control input[type=datetime],
+    .form-control input[type=email],
+    .form-control input[type=number],
+    .form-control input[type=password],
+    .form-control input[type=text],
+    .form-control select,
+    .form-control textarea,
+    form input:not([type=submit]),
+    form input[type=date],
+    form input[type=datetime],
+    form input[type=email],
+    form input[type=number],
+    form input[type=password],
+    form input[type=text],
+    form select,
+    form textarea,
+    input:not([type=submit]),
+    input[type=date],
+    input[type=datetime],
+    input[type=email],
+    input[type=number],
+    input[type=password],
+    input[type=text],
+    select,
+    textarea,
+    .cdbl__tag,
+    .cdbl__tabs,
+    .divider,
+    .divider-bottom,
+    .divider-top,
+    .cdbl__tabs .cdbl__tabs-header .cdbl__tabs-title {
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-primary,
+    .cdbl-button,
+    .cdbl-button.primary,
+    [cdbl-button],
+    [cdbl-button].primary,
+    cdbl-button,
+    cdbl-button.primary {
+        background-color: #238636;
+    }
+
+    .btn-primary.disabled,
+    .btn-primary:disabled,
+    .btn-primary[disabled],
+    .cdbl-button.disabled,
+    .cdbl-button.primary.disabled,
+    .cdbl-button.primary:disabled,
+    .cdbl-button.primary[disabled],
+    .cdbl-button:disabled,
+    .cdbl-button[disabled],
+    [cdbl-button].disabled,
+    [cdbl-button].primary.disabled,
+    [cdbl-button].primary:disabled,
+    [cdbl-button].primary[disabled],
+    [cdbl-button]:disabled,
+    [cdbl-button][disabled],
+    cdbl-button.disabled,
+    cdbl-button.primary.disabled,
+    cdbl-button.primary:disabled,
+    cdbl-button.primary[disabled],
+    cdbl-button:disabled,
+    cdbl-button[disabled] {
+        background-color: #1d2122;
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    cdbl-switch .cdbl-bar {
+        background-color: #4d4d4d;
+    }
+
+    .sidebar-narrow .sidebar-table tr td,
+    .sidebar .sidebar-table tr td {
+        background-color: #363636;
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    #commentsForm .actions input[type=submit],
+    .sidebar-narrow .sidebar-table tr td:last-child,
+    .sidebar .sidebar-table tr td:last-child,
+    .sidebar-narrow .sidebar-table tr td:first-child,
+    .sidebar .sidebar-table tr td:first-child {
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .comments .comment.different-user,
+    cdbl-activity .activity--create_comment .comment.different-user {
+        background-color: #363636;
+        border-color: #48a971;
+    }
 
 
-cdbl-activity-stream .sticky-bottom {
-    background-color: #333;
-}
+    .comments .comment,
+    cdbl-activity .activity--create_comment .comment {
+        background-color: #363636;
+        border-color: #c88b78;
+    }
 
-.comments .comment.comment-private,
-cdbl-activity .activity--create_comment .comment.comment-private,
-#commentsForm .tabs .tab.expert.active,
-#commentsForm .expert-only .btn-group,
-#commentsForm .expert-only .comment-area,
-#commentsForm .tabs .tab.expert,
-#commentsForm .expert-only .btn {
-    background-color: #43635a;
+    cdbl-notifications-widget-popover .notifications-list.notifications-list--important .notifications-list__see-more,
+    cdbl-notification-item .notification-wrapper.notification--isImportant {
+        background-color: #5e4239 !important;
+    }
 
-}
+    .comments .comment .content .name,
+    .activity-complete,
+    .comments .comment .content .name a.user-link,
+    cdbl-activity .activity--create_comment .comment .content .name,
+    cdbl-activity .activity--create_comment .comment .content .name a.user-link,
+    .activity-normal .activity-meta,
+    .activity-normal .time,
+    .activity-normal .time-attachment,
+    .comments .comment .content .time,
+    cdbl-activity .activity--create_comment .comment .content .time,
+    cdbl-activity .activity--create_comment .comment .content .message {
+        color: #c9d1d9;
+    }
 
-#commentsForm .tabs .tab.expert,
-#commentsForm .tabs .tab.expert.active {
-    color: #67f2a2;
-}
+    .sidebar-estimation .estimate-header.sidebar-row {
+        background-color: #252525;
+        border-color: rgba(255, 255, 255, 0.1);
+    }
 
-#commentsForm marked-textarea textarea,
-#commentsForm .expert-only .comment-area {
-    color: #c9d1d9;
-}
+    .estimation-sidebar__additinal-fields {
+        background-color: rgb(54, 54, 54);
+    }
 
-#commentsForm marked-textarea textarea,
-#commentsForm marked-textarea .marked-textarea--controls,
-marked-textarea .marked-textarea--controls .btn-icon,
-#commentsForm .tabs .tab.public.active,
-#commentsForm .tabs .public {
-    background-color: #5f5f5f;
-}
+    .sidebar-narrow .sidebar-row,
+    .sidebar .sidebar-row {
+        border-color: rgba(255, 255, 255, 0.1);
+        background-color: #363636;
+    }
 
-cdbl-comments-form-referred-partner-notice .notice-overlay {
-    background-color: rgba(0, 0, 0, 0.85);
+    .cdbl-button.button-outline,
+    .cdbl-button.outline,
+    .cdbl-button.primary.outline,
+    [cdbl-button].button-outline,
+    [cdbl-button].outline,
+    [cdbl-button].primary.outline,
+    cdbl-button.button-outline,
+    cdbl-button.outline,
+    cdbl-button.primary.outline {
+        background-color: #252525;
+        color: #c9d1d9;
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    #commentsForm .actions input[type=submit],
+    .cdbl-button.button-outline:hover,
+    .cdbl-button.outline:hover,
+    .cdbl-button.primary.outline:hover,
+    [cdbl-button].button-outline:hover,
+    [cdbl-button].outline:hover,
+    [cdbl-button].primary.outline:hover,
+    cdbl-button.button-outline:hover,
+    cdbl-button.outline:hover,
+    cdbl-button.primary.outline:hover {
+        background-color: #238636;
+    }
+
+    .activity-normal {
+        background-color: #534343;
+    }
+
+    cdbl-expert-profile-skills-and-expertise .info {
+        background-color: #4d4d4d;
+    }
+
+    cdbl-activity-stream .sticky-bottom {
+        background-color: #333;
+    }
+
+    .activity-complete,
+    cdbl-notifications-widget-popover .notifications-header,
+    .comments .comment.comment-private,
+    cdbl-activity .activity--create_comment .comment.comment-private,
+    #commentsForm .tabs .tab.expert.active,
+    #commentsForm .expert-only .btn-group,
+    #commentsForm .expert-only .comment-area,
+    #commentsForm .tabs .tab.expert,
+    #commentsForm .expert-only .btn {
+        background-color: #43635a;
+
+    }
+
+    /*Dark Green BG*/
+    cdbl-expert-profile-edit .expert-profile-edit__toolbar__bottom,
+    cdbl-expert-profile-edit .expert-profile-edit__toolbar__top,
+    .cdbl-button.button-outline,
+    .cdbl-button.button-primary.button-outline,
+    .cdbl-button.button-primary.button-secondary,
+    .cdbl-button.button-secondary,
+    [cdbl-button].button-outline,
+    [cdbl-button].button-secondary,
+    a.cdbl-button.button-outline,
+    a.cdbl-button.button-secondary,
+    cdbl-button.button-outline,
+    cdbl-button.button-secondary,
+    cdbl-notification-item .notification-wrapper {
+        background-color: #263833;
+    }
+
+    #commentsForm .tabs .tab.expert,
+    #commentsForm .tabs .tab.expert.active {
+        color: #67f2a2;
+    }
+
+    #commentsForm marked-textarea textarea,
+    #commentsForm .expert-only .comment-area {
+        color: #c9d1d9;
+    }
+
+    #commentsForm marked-textarea textarea,
+    #commentsForm marked-textarea .marked-textarea--controls,
+    marked-textarea .marked-textarea--controls .btn-icon,
+    #commentsForm .tabs .tab.public.active,
+    #commentsForm .tabs .public {
+        background-color: #5f5f5f;
+    }
+
+    cdbl-comments-form-referred-partner-notice .notice-overlay {
+        background-color: rgba(0, 0, 0, 0.85);
+    }
 }
