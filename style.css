@@ -1,5 +1,7 @@
 @media (prefers-color-scheme: dark) {
-    body {
+
+    body,
+    code {
         background-color: #181818;
         color: #c9d1d9;
     }
@@ -21,8 +23,9 @@
     cdbl-project-browse-sidebar .menu-list .menu-item,
     cdbl-project-browse-sidebar .menu-list .menu-item:visited,
     cdbl-project-browse-sidebar,
+    cdbl-additional-tasks-create-modal .price-wrapper,
     cdbl-notifications .notifications-menu .menu-list .menu-item,
-    cdbl-notifications .notifications-menu .menu-list .menu-item:visited {
+    cdbl-additional-tasks-view-modal .task-event-log cdbl-notifications .notifications-menu .menu-list .menu-item:visited {
         background-color: #161C22;
     }
 
@@ -47,7 +50,9 @@
         background-color: #363636;
     }
 
+    cdbl-settings cdbl-toolbar.settings-toolbar,
     cdbl-no-results,
+    cdbl-additional-tasks-view-modal .task-event-log,
     cdbl-project-browse-project .client-block {
         background-color: #242f29;
     }
@@ -57,7 +62,16 @@
         background-color: #181818;
     }
 
+    .cdbl__form-field-addon .cdbl__input-preffix,
+    .cdbl__form-field-addon .cdbl__input-suffix,
+    .cdbl__form-field .cdbl__input-preffix,
+    .cdbl__form-field .cdbl__input-suffix,
+    .price-wrapper .field-inner input {
+        color: #c9d1d9;
+    }
+
     .popover,
+    cdbl-settings cdbl-toolbar.settings-toolbar,
     .popover.bottom>.arrow:after {
         border-bottom-color: #363636;
     }
@@ -105,7 +119,7 @@
     cdbl-project-browse-sidebar .menu-list .menu-item:visited,
     .form-controls .checkbox input[type=checkbox]:checked+span+label,
     .form-controls .checkbox input[type=radio]:checked+span+label,
-    .popover-content.main-menu ul.nav li a,
+    .popover-content.main-menu ul.nav li a.active,
     .popover-content.main-menu ul.nav li a:hover,
     cdbl-expert-profile-edit .expert-profile-edit-menu .menu-item,
     cdbl-expert-profile-edit .expert-profile-edit-menu .menu-item:hover,
@@ -118,10 +132,14 @@
     .cdbl-button.button-primary.button-link,
     [cdbl-button].button-link,
     a.cdbl-button.button-link,
-    cdbl-button.button-link,
     a,
-    a:hover {
+    .task-overview-details .user-link span,
+    cdbl-button.button-link a:hover {
         color: #67f2a2;
+    }
+
+    .notice-overlay strong {
+        text-decoration: underline;
     }
 
     .arrow-left {
@@ -132,6 +150,8 @@
         border-top-color: #67f2a2;
     }
 
+    cdbl-settings .settings-menu .menu-item.active,
+    cdbl-settings .settings-menu .menu-item:active,
     cdbl-project-dashboard-navigation .cdbl__navigation-link a,
     .settings-wrapper .sidebar .link.active a,
     .comment .message a,
@@ -171,6 +191,7 @@
     cdbl-project-dashboard-project+cdbl-project-dashboard-project,
     cdbl-project-dashboard-navigation .cdbl__navigation-link .submenu,
     cdbl-project-scope-doc-view .scope-doc-item,
+    cdbl-settings .settings-sidebar-content,
     .price-breakdown .price-breakdown__amount {
         border-color: rgba(255, 255, 255, 0.1);
     }
@@ -213,6 +234,10 @@
     form cdbl-field-container .field__form-element select:focus {
         border-color: rgba(255, 255, 255, 0.3);
         box-shadow: none;
+    }
+
+    cdbl-sidebar {
+        box-shadow: 0 1px 3px 0 rgba(255, 255, 255, 0.1), 0 1px 1px 0 rgba(255, 255, 255, 0.1), 0 2px 1px -1px rgba(255, 255, 255, 0.1);
     }
 
     cdbl-project-user-card .project-user-card__inner-wrapper {
@@ -352,6 +377,9 @@
     [cdbl-button].button-icon,
     a.cdbl-button.button-icon,
     cdbl-button.button-icon,
+    cdbl-settings .settings-menu .menu-item,
+    cdbl-settings .settings-menu .menu-item,
+    .popover-content.main-menu ul.nav li a,
     .cdbl__select {
         color: #c9d1d9;
     }
@@ -698,4 +726,5 @@
     cdbl-comments-form-referred-partner-notice .notice-overlay {
         background-color: rgba(0, 0, 0, 0.85);
     }
+
 }
