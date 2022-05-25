@@ -693,7 +693,7 @@
     }
 
     .activity-normal {
-        background-color: #534343;
+        background-color: #423636;
     }
 
     cdbl-expert-profile-skills-and-expertise .info {
@@ -705,7 +705,10 @@
         background-color: #333;
     }
 
-	.activity-complete,
+	.activity-complete{
+		background-color: #2a3d38;
+	}
+	
     cdbl-notifications-widget-popover .notifications-header,
     .comments .comment.comment-private,
     cdbl-activity .activity--create_comment .comment.comment-private,
