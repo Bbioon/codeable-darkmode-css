@@ -1,6 +1,9 @@
 @media (prefers-color-scheme: dark) {
+	:root {
+	  color-scheme: dark;
+	}
 	
-    body,code{
+	body,code{
         background-color: #181818;
         color: #c9d1d9;
     }
@@ -539,6 +542,10 @@
     .cdbl__tabs .cdbl__tabs-header .cdbl__tabs-title{
         border-color: rgba(255, 255, 255, 0.1);
     }
+	
+	.popover{
+		border-color: rgba(255, 255, 255, 0.1) !important;
+	}
 
     .btn-primary,
     .cdbl-button,
