@@ -18,6 +18,11 @@
 		border: none;
 	}
 	
+	a:focus{
+		box-shadow: 0 0 0 2px #515151;
+		outline: none;
+	}
+	
     cdbl-client-profile-view-modal .section-meta,
     cdbl-notifications-list,  
     cdbl-notifications-widget-popover .notifications-header.notifications-header--important,
@@ -48,18 +53,26 @@
     cdbl-notifications-widget-popover .notifications-list__see-more.notifications-list__see-more--sticky,
     cdbl-project-browse-project .project-block,
 	cdbl-expert-profile-edit-portfolio-item,
+	.modal .price-calculator .price-calculated,
+	cdbl-notifications .notifications-menu .menu-list .menu-item:visited,
 	cdbl-project-user-card .project-user-card__inner-wrapper{
         background-color: #363636;
     }
 
 	cdbl-settings cdbl-toolbar.settings-toolbar,
     cdbl-no-results, 
+	
 	cdbl-additional-tasks-view-modal .task-event-log,
     cdbl-project-browse-project .client-block {
         background-color: #242f29;
     }
 	
 	cdbl-project-browse-list,
+	.modal .modal-content,
+	.estimation-price-box-wrap,
+	cdbl-notifications .notifications-menu .menu-list .menu-item.active,
+	cdbl-notifications .notifications-menu .menu-list .menu-item,
+	cdbl-notifications .notifications-menu .menu-list .menu-item:hover,
 	.reviews-list cdbl-expert-profile-edit-review-item{
 		background-color: #181818;
 	}
@@ -330,7 +343,7 @@
 	cdbl-file-selector .upload-drop-area,
 	cdbl-field-container .field-container-wrapper .field__description,
 	cdbl-collapsible .collapsible-block__header__title,
-	
+	.estimation-price-box-wrap .estimation-price-box__item-input-budget span,
 	cdbl-field-container .field__form-element input:not([type=submit]), 
 	cdbl-field-container .field__form-element input[type=date],
 	cdbl-field-container .field__form-element input[type=datetime],
@@ -378,6 +391,7 @@
 	cdbl-settings .settings-menu .menu-item,
 	cdbl-settings .settings-menu .menu-item,
 	.popover-content.main-menu ul.nav li a,
+	.estimation-price-box__item--budget,
 	.cdbl__select{
         color: #c9d1d9;
     }
@@ -416,6 +430,7 @@
 	cdbl-transaction-item .transaction__date,
 	cdbl-transactions .transactions-list__summary,
 	cdbl-toolbar.toolbar-template--page-header .toolbar-template .toolbar__title,
+	form input[type="number"],
 	cdbl-project-dashboard-project .project-template{
         color: #c9d1d9 !important;
     }
@@ -443,6 +458,8 @@
     .activity-expert .overview .text.role,
     .activity-normal,
 	.activity-complete .time,
+	.modal .modal-content,
+	.estimation-check-list__checkbox .checkbox label,
 	.dropdown-menu>li>a{
         color: #c9d1d9;
     }
@@ -543,6 +560,8 @@
         border-color: rgba(255, 255, 255, 0.1);
     }
 	
+	.modal-content,
+	.modal .price-calculator .price-calculated .price,
 	.popover{
 		border-color: rgba(255, 255, 255, 0.1) !important;
 	}
@@ -727,6 +746,7 @@
 	cdbl-radio .radio-wrapper .label,
 	cdbl-radio .radio--isChecked .check+.label, 
 	cdbl-radio .radio--isChecked .label,
+	.modal h3,
     #commentsForm .expert-only .comment-area {
         color: #c9d1d9;
     }
