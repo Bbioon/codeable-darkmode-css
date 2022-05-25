@@ -722,6 +722,11 @@
     }
 
     #commentsForm marked-textarea textarea,
+	cdbl-section .section__header__title,
+	cdbl-field-container .field-container-wrapper .field__form-element,
+	cdbl-radio .radio-wrapper .label,
+	cdbl-radio .radio--isChecked .check+.label, 
+	cdbl-radio .radio--isChecked .label,
     #commentsForm .expert-only .comment-area {
         color: #c9d1d9;
     }
@@ -737,5 +742,9 @@
     cdbl-comments-form-referred-partner-notice .notice-overlay {
         background-color: rgba(0,0,0,0.85);
     }
+	
+	cdbl-settings .settings-menu .menu-item:visited{
+		color: #26a25a;
+	}
 
 }
