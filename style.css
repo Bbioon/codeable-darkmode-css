@@ -30,6 +30,7 @@
     cdbl-project-browse-sidebar .menu-list .menu-item,
     cdbl-project-browse-sidebar .menu-list .menu-item:visited,
     cdbl-project-browse-sidebar,
+	.modal-blue-panel,
 	cdbl-additional-tasks-create-modal .price-wrapper,
 	cdbl-notifications .notifications-menu .menu-list .menu-item, cdbl-additional-tasks-view-modal .task-event-log
 	cdbl-notifications .notifications-menu .menu-list .menu-item:visited{
