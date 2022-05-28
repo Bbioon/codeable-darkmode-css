@@ -639,6 +639,7 @@
 
     .comments .comment .content .name,
 	.activity-complete,
+	cdbl-noticebar>div,
     .comments .comment .content .name a.user-link,
     cdbl-activity .activity--create_comment .comment .content .name,
     cdbl-activity .activity--create_comment .comment .content .name a.user-link,
@@ -692,7 +693,8 @@
     cdbl-button.primary.outline:hover {
         background-color: #238636;
     }
-
+	
+	cdbl-noticebar>div,
     .activity-normal {
         background-color: #423636;
     }
