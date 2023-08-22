@@ -3,11 +3,14 @@
         color-scheme: dark;
     }
 
+    cdbl-activity .comment code, 
+    cdbl-activity .comment pre,
     .notice-overlay p,
     body, code {
         background-color: #181818;
         color: #c9d1d9;
     }
+
 
     nav.navigation .navigation-link,
     nav.navigation {
@@ -793,6 +796,6 @@
 }
 
 cdbl-expert-profile-skills-and-expertise .card__photo-wrapper,
-cdbl-expert-profile-skills-and-expertise .card__thumb img{
+cdbl-expert-profile-skills-and-expertise .card__thumb img {
     border-radius: 6px;
 }
