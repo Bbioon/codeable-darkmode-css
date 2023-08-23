@@ -87,6 +87,7 @@
         background-color: #181818;
     }
 
+    cdbl-project-scope-doc-view .scope-doc-item .scope-doc-item__bottom__description,
     .cdbl__form-field .cdbl__textarea-wrapper .cdbl__textarea,
     .cdbl__form-field input:not([type=submit]),
     .cdbl__form-field .cdbl__textarea-wrapper textarea,
