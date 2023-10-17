@@ -27,7 +27,7 @@
         outline: none;
     }
 
-
+    cdbl-project-browse-pods-management-modal .expert-pod-card,
     cdbl-modal .project-review-modal .step--review .modal-header,
     cdbl-client-profile-view-modal .section-meta,
     cdbl-notifications-list,
@@ -230,7 +230,8 @@
     cdbl-project-dashboard-navigation .cdbl__navigation-link .submenu,
     cdbl-project-scope-doc-view .scope-doc-item,
     cdbl-settings .settings-sidebar-content,
-    .price-breakdown .price-breakdown__amount {
+    .price-breakdown .price-breakdown__amount,
+    cdbl-section+cdbl-section{
         border-color: rgba(255, 255, 255, 0.1);
     }
 
