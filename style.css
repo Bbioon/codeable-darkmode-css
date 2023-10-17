@@ -68,6 +68,7 @@
         background-color: #363636;
     }
 
+    cdbl-project-browse-pods-bar .pods-bar,
     cdbl-additional-tasks-view-modal .task-summary > div:nth-child(even),
     cdbl-additional-tasks-view-modal .task-list-wrapper:focus,
     cdbl-additional-tasks-view-modal .task-list-wrapper:hover,
