@@ -3,6 +3,7 @@
         color-scheme: dark;
     }
 
+    .action-confirmation,
     cdbl-activity .comment code, 
     cdbl-activity .comment pre,
     .notice-overlay p,
